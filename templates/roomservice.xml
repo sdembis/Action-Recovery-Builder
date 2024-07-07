@@ -2,5 +2,5 @@
 <manifest>
   <!--remote name="LineageOS"
           fetch="https://github.com/LineageOS/"/-->
-  <!--project name="{DEVICE_TREE_URL_REPO}" path="{DEVICE_PATH}" remote="{DEVICE_REMOTE_NAME}" revision="{DEVICE_TREE_BRANCH}"/-->
+  <!--project name="android_device_motorola_borneo" path="device/motorola/borneo" remote="LineageOS" revision="lineage-21"/-->
 </manifest>
