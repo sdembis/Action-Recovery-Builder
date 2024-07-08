@@ -8,17 +8,12 @@ on:
         description: Manifest Branch
         options:
         - 12.1
-        - 11
-        - 9.0
-        - 8.1
-        - 7.1
-        - 6.0
         required: true
         default: 12.1
       DEVICE_TREE_URL: 
         description: Device Tree URL
         required: true
-        default: https://github.com/LineageOS/android_device_motorola_borneo
+        default: https://github.com/sdembis/android_device_motorola_borneo
       DEVICE_TREE_BRANCH:
         description: Device Tree Branch
         required: true
@@ -39,16 +34,14 @@ on:
         type: choice
         description: Partition containing recovery ramdisk
         options:
-        - boot
         - recovery
-        - vendor_boot
         required: true
         default: recovery
       RECOVERY_INSTALLER:
         description: Include recovery installer zip
         type: boolean
         required: true
-        default: false
+        default: true
 
 jobs:
   build:
